@@ -53,7 +53,7 @@ function PhotoGallery() {
   };
 
   return (
-    <section className="bg-neutral-50 px-6 py-24 md:py-32 lg:px-12">
+    <section className="bg-neutral-50 px-6 py-24 md:py-22 lg:px-12">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 flex flex-col justify-between gap-8 md:flex-row md:items-end">

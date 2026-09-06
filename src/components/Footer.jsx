@@ -1,3 +1,5 @@
+import logo from "../assets/img/logo.png";
+
 function Footer() {
   return (
     <footer className="bg-neutral-900 px-6 py-12 text-white lg:px-12">
@@ -6,19 +8,20 @@ function Footer() {
         <div className="grid gap-12 border-b border-white/10 pb-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
-            <a
-              href="#"
-              className="font-serif text-3xl tracking-tight text-white"
-            >
-              Marci Metzger
+            <p className="text-xs uppercase tracking-[0.25em] text-white/40">
+              Pahrump Realtor
+            </p>
+
+            <a href="#">
+              <img
+                src={logo}
+                alt="Marci Metzger - The Ridge Realty Group"
+                className="h-20 mb-10 w-auto object-contain brightness-0 invert"
+              />
             </a>
 
             <p className="mt-3 text-[10px] uppercase tracking-[0.25em] text-white/40">
               The Ridge Realty Group
-            </p>
-
-            <p className="mt-8 text-xs uppercase tracking-[0.25em] text-white/40">
-              Pahrump Realtor
             </p>
 
             <a

@@ -2,7 +2,7 @@ import marciImage from "../assets/img/person.png";
 
 function MeetMarci() {
   return (
-    <section id="about" className="px-6 py-24 md:py-32 lg:px-12">
+    <section id="about" className="px-6 py-18 md:py-22 lg:px-12">
       <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-center lg:gap-20">
         {/* Image */}
         <div className="overflow-hidden rounded-[2rem]">

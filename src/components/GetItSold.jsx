@@ -1,6 +1,6 @@
 import imageOne from "../assets/img/s1.png";
 import imageTwo from "../assets/img/s2.png";
-import imageThree from "../assets/img/s3.png";
+import imageThree from "../assets/img/s_3.png";
 
 function GetItSold() {
   return (

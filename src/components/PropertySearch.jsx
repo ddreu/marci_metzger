@@ -1,4 +1,5 @@
 import propertySearchImage from "../assets/img/bg2.png";
+import { ArrowUpRight } from "lucide-react";
 
 function PropertySearch() {
   return (
@@ -167,10 +168,10 @@ function PropertySearch() {
           <div className="mt-10 flex justify-end">
             <button
               type="button"
-              className="flex items-center gap-4 bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-colors hover:bg-neutral-200"
+              className="flex rounded-lg items-center gap-4 bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-colors hover:bg-neutral-200"
             >
               Search Now
-              <span>↗</span>
+              <ArrowUpRight size={18} strokeWidth={1.5} />
             </button>
           </div>
         </div>

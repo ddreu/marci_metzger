@@ -1,19 +1,27 @@
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYelp } from "react-icons/fa";
+
+import { ArrowUpRight } from "lucide-react";
+
 const socials = [
   {
     name: "Facebook",
     href: "#",
+    icon: FaFacebookF,
   },
   {
     name: "Instagram",
     href: "#",
+    icon: FaInstagram,
   },
   {
     name: "LinkedIn",
     href: "#",
+    icon: FaLinkedinIn,
   },
   {
     name: "Yelp",
     href: "#",
+    icon: FaYelp,
   },
 ];
 
@@ -31,19 +39,27 @@ function SocialLinks() {
           </h2>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-12">
-            {socials.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                className="group flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-neutral-600 transition-colors hover:text-neutral-900"
-              >
-                <span>{social.name}</span>
+            {socials.map((social) => {
+              const Icon = social.icon;
 
-                <span className="translate-x-0 text-neutral-400 transition-transform duration-300 group-hover:translate-x-1">
-                  ↗
-                </span>
-              </a>
-            ))}
+              return (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="group flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-neutral-600 transition-colors hover:text-neutral-900"
+                >
+                  <Icon size={18} />
+
+                  <span>{social.name}</span>
+
+                  <ArrowUpRight
+                    size={14}
+                    strokeWidth={1.5}
+                    className="text-neutral-400 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

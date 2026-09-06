@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 function Contact() {
   return (
     <section
@@ -21,10 +23,10 @@ function Contact() {
           <div className="lg:justify-self-end">
             <a
               href="tel:+12069196886"
-              className="inline-flex items-center gap-4 border border-white/30 px-7 py-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-neutral-900"
+              className="inline-flex rounded-lg items-center gap-4 border border-white/30 px-7 py-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-neutral-900"
             >
               Call (206) 919-6886
-              <span>↗</span>
+              <ArrowUpRight size={18} strokeWidth={1.5} />
             </a>
           </div>
         </div>
@@ -74,10 +76,10 @@ function Contact() {
 
               <button
                 type="submit"
-                className="mt-4 inline-flex items-center gap-4 bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-colors hover:bg-neutral-200"
+                className="mt-4 rounded-lg inline-flex items-center gap-4 bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-colors hover:bg-neutral-200"
               >
                 Send
-                <span>↗</span>
+                <ArrowUpRight size={18} strokeWidth={1.5} />
               </button>
 
               <p className="text-[10px] leading-5 text-white/30">

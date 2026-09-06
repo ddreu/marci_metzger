@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 function Map() {
   return (
     <section className="bg-neutral-50 px-6 py-6 md:px-8 lg:px-12 lg:py-8">
@@ -6,7 +8,7 @@ function Map() {
           <iframe
             title="Marci Metzger office location"
             src="https://www.google.com/maps?q=3190+HW-160,+Pahrump,+NV+89048&output=embed"
-            className="absolute inset-0 h-full w-full border-0 grayscale"
+            className="absolute inset-0 h-full w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
@@ -25,9 +27,10 @@ function Map() {
               href="https://www.google.com/maps/dir/?api=1&destination=3190+HW-160,+Pahrump,+NV+89048"
               target="_blank"
               rel="noreferrer"
-              className="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-50"
+              className="mt-4 inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-50"
             >
-              Get Directions ↗
+              Get Directions
+              <ArrowUpRight size={14} strokeWidth={1.5} />
             </a>
           </div>
         </div>
