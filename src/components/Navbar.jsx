@@ -19,17 +19,17 @@ function Navbar() {
           {/* Desktop Left */}
           <div className="hidden -translate-x-4 items-center justify-end gap-8 lg:flex">
             <a
-              href="#move"
+              href="#"
               className="text-xs uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-60"
             >
-              Let's Move
+              Home
             </a>
 
             <a
-              href="#about"
+              href="#listings"
               className="text-xs uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-60"
             >
-              About Us
+              Listings
             </a>
           </div>
 
@@ -57,17 +57,17 @@ function Navbar() {
           {/* Desktop Right */}
           <div className="hidden translate-x-4 items-center justify-start gap-8 lg:flex">
             <a
-              href="#"
+              href="#move"
               className="text-xs uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-60"
             >
-              Home
+              Let's Move
             </a>
 
             <a
-              href="#listings"
+              href="#about"
               className="text-xs uppercase tracking-[0.2em] text-neutral-900 transition-opacity hover:opacity-60"
             >
-              Listings
+              About Us
             </a>
           </div>
         </div>
